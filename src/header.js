@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
+import logo from './bookShelf.png';
 
 const Header = () => {
     return (
         <header className="header">
-                <ul>
-                    <nav className='left-nav'>
-                        <li>MC's Books</li>
-                    </nav>
-                    <nav className="right-nav">
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/books">Books</Link></li>
-                    </nav>
-                </ul>
+            <nav className='left-nav'>
+                <img src={logo} alt={'logo'} className='logo'/>
+                <span>MC's Books</span>
+            </nav>
+            <nav className="right-nav">
+                <Link to="/">Home</Link>
+                <Link to="/books">Books</Link>
+            </nav>
         </header>
     );
 };

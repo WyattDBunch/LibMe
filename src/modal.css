@@ -1,0 +1,12 @@
+.modal {
+    position: relative;
+    width: 50%;  /* Adjust the width as needed */
+    max-width: 600px; /* Optional, for responsiveness */
+    height: 300px; /* Adjust the height as needed */
+    background-color: white;
+    margin: auto; /* Center the modal */
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+}

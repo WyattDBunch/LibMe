@@ -1,28 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
 
-.right-nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header ul {
-    list-style-type: none;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-}
-
-.header li {
-    margin-right: 20px;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 24px;
+body {
     font-family: 'Baskervville', serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: #7A918D;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-nav {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
 }
 
 .right-nav a {
     text-decoration: none;
     color: antiquewhite;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .right-nav a:link {
@@ -33,13 +44,3 @@
     text-decoration: underline;
     color: white;
 }
-
-.header {
-    padding: 30px;
-    background: #7A918D;
-}
-
-.left-nav {
-    float: left;
-}
-
